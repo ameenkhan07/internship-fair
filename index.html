@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Internship Fair @ Jamia Millia Islamia</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="applicatkion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="home" class="banner">
+	<div class="container">
+		<div class="banner-info">
+			<h1>THE <span class="colon">INTERNSHIP </span>FAIR</h1>
+			<p style="font-weight:bold ; color: #99cc33">2015</p>
+			<br><br><br>
+			<div class="view"><a class="scroll" href="#register">&nbsp;&nbsp;Register now&nbsp;&nbsp;</a></div>
+		</div>
+		<div class="banner-grids">
+			<div class="banner-grid text-center" style="width:100%">
+				<div class="banner-left" style="width:60%; float:left">
+					<ul>
+						<li><strong>FACULTY OF ENGINEERING AND TECHNOLOGY<span style="text-align:center">JAMIA MILLIA ISLAMIA</span></strong></li>
+						<br>
+						<li>NEW DELHI</li>
+					</ul>
+				</div>
+				<div class="banner-right" style="width:40%; float:right">
+					<ul>
+						<li><strong>ON<span style="text-align:center">25&nbsp; APRIL</span></strong></li>
+						<br>
+						<li>9:30 AM - 6:00 PM</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<div class="navigation">
+	<div class="container">
+		<div class="fixed-header">
+			<div class="nav-right">
+				<span class="menu"><img src="images/menu.png" alt="" /></span>
+					<nav class="cl-effect-1">
+						<ul class="nav1">
+							<li><a class="scroll" href="#about">About</a></li>
+							<li><a class="scroll" href="#register">Register</a></li>
+							<li><a class="scroll" href="#schedule">Schedule</a></li>
+							<!--<li><a class="scroll" href="#companies">Companies</a></li>-->
+							<li><a class="scroll" href="#location">Location</a></li>
+							<li><a class="scroll" href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+					<script> 
+						$( "span.menu" ).click(function() {
+						$( "ul.nav1" ).slideToggle( 300, function() {
+						});
+						});
+					</script>
+						<script>
+						$(document).ready(function() {
+							 var navoffeset=$(".navigation").offset().top;
+							 $(window).scroll(function(){
+								var scrollpos=$(window).scrollTop(); 
+								if(scrollpos >=navoffeset){
+									$(".navigation").addClass("fixed");
+								}else{
+									$(".navigation").removeClass("fixed");
+								}
+							 });
+							 
+						});
+						</script>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<div id="about" class="our-services">
+	<div class="container">
+		<div class="our-info text-center">
+			<h2><span class="highlight">ABOUT</span> THE FAIR</h2>
+		</div>
+		<div class="our-grids">
+			<div class="our-grid" style="width:100%">
+				<p style="font-size:medium">Intended to bridge the gap between student interns and the startups, the <b>Placement Cell</b> of <b>Jamia Millia Islamia</b> will be hosting a one day <b>Internship Fair</b>. The fair will bring on board 40 startups seeking interns in various fields, giving them an option to select from a pool of talented students. The fair will be a perfect platform for students to meet potential employers, create networks and gain challenging opportunities to work for this summer.</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- <div class="about-bottom">
+	<div class="container">
+		<div class="bottom-grids" style="width:100%">
+			<div class="col-md-4 bottom-grid text-center">
+				<div class="like"></div>
+				<h2>40</h2>
+				<p>Companies</p>
+			</div>
+			<div class="col-md-4 bottom-grid text-center">
+				<div class="chat"></div>
+				<h2>X</h2>
+				<p>Students</p>
+			</div>
+			<div class="col-md-4 bottom-grid text-center">
+				<div class="smiley"></div>
+				<h2>Y</h2>
+				<p>Volunteers</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div> -->
+<div id="register" class="pricing-table">
+	<div class="container">
+		<div class="pricing-info text-center">
+			<h2 style="color:white">REGISTRATION</h2>
+		</div>
+		<br><br><br>
+		<div class="pricing-grids">
+			<div class="pricing-grid">
+				<div class="basic-plan">
+					<h3>FOR COMPANIES</h3>
+				</div>
+				<br>
+				<ul>
+					<li class="h4">Registration is open</li>
+				</ul>
+				<div class="started"><a target="_blank" href="https://docs.google.com/forms/d/1KlgR7hArw0WwPxHqtm26jJAwV2LDMsIgle_xmEH_l6E/viewform?c=0&w=1">REGISTER NOW</a></div>
+			</div>
+			<div class="pricing-grid">
+				<div class="basic-plan">
+					<h3>FOR STUDENTS</h3>
+				</div>
+				<br>
+				<ul>
+					<li class="h4">Registration will open soon</li>
+				</ul>
+				<!--<div class="started"><a href="https://docs.google.com/forms/d/13hALtEBTgtf-QG2uB4kNKqo6UGgvkl4UvujlQXlfqmA/viewform">REGISTER NOW</a></div>-->
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<div id="schedule" class="our-blog">
+	<div class="container">
+		<div class="our-blog-info text-center">
+			<h2><span class="highlight">SCHEDULE</span></h2>
+			<br><br><br>
+			<div class="august">25 April 2015</div>
+		</div>
+		<div class="blog-grids">
+			<div class="blog-post">
+				<div class="blog-txt">
+					<div class="caption-text">
+						<div class="caption-left">
+							<p>9:30 AM - 10:30 AM</p>
+							<br>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<h4>On-spot registrations for students</h4>
+					<p>Students who haven't registered themselves before can do so during this hour.</p>
+					<div class="clearfix"></div>
+
+
+					<div class="caption-text">
+						<div class="caption-left">
+							<p>10:30 AM - 1:00 PM</p>
+							<br>
+						</div>
+						<div class="clearfix"></div>
+				
+					<h4>Commencement of fair and express interviews.</h4>
+					<br><br>
+				</div>				
+					<div class="caption-text">
+						<div class="caption-left">
+							<p>1:00 PM - 2:00 PM</p>
+							<br>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<h4>Lunch break</h4>
+					<br><br>
+			</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="august">Post break</div>
+		<div class="blog-grids">
+			<div class="blog-post">
+				<div class="blog-txt">
+					<div class="caption-text">
+						<div class="caption-left">
+							<p>2:00 PM - 6:00 PM</p>
+							<br>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<h4>Express interviews continue</h4>
+					<br><br>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="august">Fair ends</div>
+	</div>
+</div>
+<!-- <div id="companies" class="our-works">
+	<div class="container">
+		<div class="our-work-info text-center wow bounceIn" data-wow-delay="0.4s">
+			<h2><span class="highlight">COMPANIES</span></h2>
+			<p>Here's an overview of the companies taking part in the fair.</p>
+		</div>
+		<div class="portfolio-grid">
+					<ul id="filters">
+						<li class="active"><span class="filter " data-filter="engineering commerce law arts">All</span> </li>
+						<li><span class="filter" data-filter="engineering">Engineering</span></li>
+						<li><span class="filter" data-filter="commerce">Commerce</span></li>
+						<li><span class="filter" data-filter="law">Law</span></li>
+						<li><span class="filter" data-filter="arts">Arts</span></li>
+
+					</ul>
+			<div id="portfoliolist">
+						<div class="port-grid">
+							<div class="portfolio commerce mix_all" data-cat="commerce" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper ">		
+										<a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+											<img class="img-responsive" src="images/a.jpg" alt=""  />
+                                            <div class="simple-in">
+                                                <ul class="social img-one">
+                                                    <li><span> </span></li>
+                                                    <li><span class="text"> </span></li>
+                                                </ul>
+                                                <div class="clearfix"> </div>
+                                            </div>
+										</a>
+										<div class="simple-out">
+											<h4>FLAT MOCKUP</h4>
+											<p>Identity</p>
+										</div>							
+								</div>
+							</div>				
+							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">		
+										<a href="#small-dialog1" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+											<img class="img-responsive" src="images/g.jpg" alt=""/>
+                                            <div class="simple-in one">
+                                                <ul class="social img-two">
+                                                    <li><span> </span></li>
+                                                    <li><span class="text"> </span></li>
+                                                </ul>
+                                                <div class="clearfix"> </div>
+                                            </div>
+										</a>
+											<div class="simple-out">
+													<h4>FLAT ICON</h4>
+													<p>Graphic</p>
+											</div>							
+									</div>
+							</div>		
+							<div class="portfolio law mix_all" data-cat="law" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">		
+									<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+										<img class="img-responsive" src="images/d.jpg"  alt="" />
+                                        <div class="simple-in two">
+                                            <ul class="social img-three">
+                                                <li><span> </span></li>
+                                                <li><span class="text"> </span></li>
+                                            </ul>
+                                            <div class="clearfix"> </div>
+                                        </div>	
+									</a>
+									<div class="simple-out">
+										<h4>FREE ICON</h4>
+										<p>Mobile Apps</p>
+									
+									</div>							
+								</div>
+							</div>
+						</div>	
+						<div class="port-grid">
+							<div class="portfolio arts mix_all" data-cat="arts" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper ">		
+									<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+									<img class="img-responsive" src="images/m.jpg" alt=""  />
+									<div class="simple-in three">
+                                        <ul class="social img-one">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+										<div class="clearfix"> </div>
+									</div>	
+									</a>
+									<div class="simple-out">
+										<h4>ATOM WEBSITE</h4>
+										<p>Website</p>
+										
+									</div>							
+								</div>
+							</div>	
+							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper ">		
+									<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+										<img class="img-responsive" src="images/f.jpg" alt=""  />
+                                        <div class="simple-in four">
+                                            <ul class="social img-two">
+                                                <li><span> </span></li>
+                                                <li><span class="text"> </span></li>
+                                            </ul>
+                                            <div class="clearfix"> </div>
+										</div>	
+									</a>
+										<div class="simple-out">
+											<h4>30 ICON MODERN</h4>
+											<p>Graphic</p>
+										</div>							
+								</div>
+							</div>			
+							<div class="portfolio law mix_all" data-cat="law" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">		
+									<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+										<img class="img-responsive" src="images/c.jpg" alt=""  />
+                                        <div class="simple-in five">
+                                            <ul class="social img-three">
+                                                <li><span> </span></li>
+                                                <li><span class="text"> </span></li>
+                                            </ul>
+                                            <div class="clearfix"> </div>
+                                        </div>
+									</a>
+									<div class="simple-out">
+										<h4>FREE LOGOTYPE</h4>
+										<p>Identity</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="port-grid">
+							<div class="portfolio commerce mix_all" data-cat="commerce" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">		
+									<a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+
+										<img class="img-responsive" src="images/l.jpg" alt=""  />
+                                        <div class="simple-in six">
+                                            <ul class="social img-one">
+                                                <li><span> </span></li>
+                                                <li><span class="text"> </span></li>
+                                            </ul>
+                                            <div class="clearfix"> </div>
+                                        </div>	
+									</a>
+									<div class="simple-out">
+										<h4>BRONZE APPS</h4>
+										<p>Mobile Apps</p>
+									</div>							
+								</div>
+							</div>
+							<div class="portfolio arts mix_all" data-cat="arts" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">		
+									<a href="#small-dialog7" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+
+										<img class="img-responsive" src="images/e.jpg" alt=""  />						    
+                                        <div class="simple-in seven">
+                                            <ul class="social img-two">
+                                                <li><span> </span></li>
+                                                <li><span class="text"> </span></li>
+                                            </ul>
+                                            <div class="clearfix"> </div>
+                                        </div>
+									</a>
+									<div class="simple-out">
+										<h4>DIGITAL BRANDING WEBSITE</h4>
+										<p>Website</p>
+								
+									</div>							
+								</div>
+							</div>
+							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper ">		
+									<a href="#small-dialog8" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+
+										<img class="img-responsive" src="images/b.jpg" alt=""  />
+                                        <div class="simple-in eight">
+                                            <ul class="social img-three">
+                                                <li><span> </span></li>
+                                                <li><span class="text"> </span></li>
+                                            </ul>
+                                            <div class="clearfix"> </div>
+                                        </div>	
+									</a>
+									<div class="simple-out">
+										<h4>WEDDING INVITATION</h4>
+										<p>Identity</p>
+									</div>							
+								</div>
+							</div>	
+						</div>	
+			</div>	
+					<script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<div id="small-dialog" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/a.jpg" alt="" />
+								<h4>FLAT MOCKUP</h4>
+								<p>Identity</p>
+						</div>
+					</div>
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/g.jpg" alt="" />
+							<h4>FLAT ICON</h4>
+							<p>Graphic</p>
+						</div>
+					</div>
+					<div id="small-dialog2" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/d.jpg" alt="" />
+							<h4>FREE ICON</h4>
+							<p>Mobile Apps</p>
+						</div>
+					</div>
+					<div id="small-dialog3" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/m.jpg" alt="" />
+							<h4>ATOM WEBSITE</h4>
+							<p>Website</p>
+						</div>
+					</div>
+					<div id="small-dialog4" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/f.jpg" alt="" />
+							<h4>30 ICON MODERN</h4>
+							<p>Graphic</p>
+						</div>
+					</div>
+					<div id="small-dialog5" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/c.jpg" alt="" />
+							<h4>FREE LOGOTYPE</h4>
+							<p>Identity</p>
+						</div>
+					</div>
+					<div id="small-dialog6" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/l.jpg" alt="" />
+							<h4>BRONZE APPS</h4>
+							<p>Mobile Apps</p>
+						</div>
+					</div>
+					<div id="small-dialog7" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/e.jpg" alt="" />
+							<h4>DIGITAL BRANDING WEBSITE</h4>
+							<p>Website</p>
+						</div>
+					</div>
+					<div id="small-dialog8" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/b.jpg" alt="" />
+							<h4>WEDDING INVITATION</h4>
+							<p>Identity</p>
+						</div>
+					</div>
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});																
+						});
+			</script>
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+							$(function () {
+								var filterList = {
+									init: function () {
+										$('#portfoliolist').mixitup({
+											targetSelector: '.portfolio',
+											filterSelector: '.filter',
+											effects: ['fade'],
+											easing: 'snap',
+											onMixEnd: filterList.hoverEffect()
+										});				
+									},
+									hoverEffect: function () {
+										$('#portfoliolist .portfolio').hover(
+											function () {
+												$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+												$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+											},
+											function () {
+												$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+												$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+											}		
+										);				
+									}
+								};
+								filterList.init();
+							});	
+					</script>
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+</div> -->
+<div id="location" class="contact-us">
+	<div class="container">
+		<div class="get-info text-center">
+			<h2 style="color: white">LOCATION</h2>
+		</div>
+		<br><br>
+		<div class="map" style="width:100%">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.160339557983!2d77.28024315502611!3d28.560131705790567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x6a6dc45ff88d2ec5!2sFaculty+of+Engineering+and+Technology!5e0!3m2!1sen!2sin!4v1428241526838" frameborder="0" style="border:0"></iframe>
+			</div>
+		<div class="contact-grids">
+			<!-- <div class="col-md contact-grid text-center">
+				<div class="point-icon"></div>
+				<p>Faculty of Engineering and Technology</p>
+				<p>Jamia Millia Islamia</p>
+				<p>Maulana Mohammed Ali Jauhar Marg</p>
+				<p>New Delhi-110025</p>
+			</div> -->
+			
+			<br><br>
+			<div class="col-md-4 contact-grid text-center">
+				<h4>Nearest Metro stations</h4>
+				<p>Kalkaji Mandir</p>
+				<p>Govindpuri</p>
+			</div>
+			<div class="col-md-4 contact-grid text-center">
+				<h4>Nearest bus stands</h4>
+				<p>Jamia Nagar</p>
+				<p>Holy Family Hospital</p>
+			</div>
+			<div class="col-md-4 contact-grid text-center">
+				<h4>Buses you can take</h4>
+				<p>402, 403, 507, 534, 894</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="twitt-slider">
+	<div class="container">
+			<a href="https://www.facebook.com/events/287560234701214/287845228006048/">
+				<div class="twitt-info">
+					<img src="images/facebook.png" alt="" />
+					<br><br>
+					<h2 style="color:#FFF">Follow us on Facebook</h2>
+					<h3>Join the event and spread the word !</h3>	
+				</div>
+			</a>
+	</div>
+</div>
+<div id="contact" class="our-team">
+	<div class="container">
+		<div class="team-info text-center">
+			<h2><span>CONTACT</span> US</h2>
+		</div>
+		<br><br><br>
+		<div class="team-grids">
+			<div class="col-md-4 team-grid">
+				<div class="team-grid-info">
+					<h3>Ashar Javed</h3>
+					<p>981-160-0063</p>
+					<p>asharjaved7@gmail.com</p>
+				</div>
+			</div>
+			<div class="col-md-4 team-grid">
+				<div class="team-grid-info">
+					<h3>Shivam Rana</h3>
+					<p>901-349-5129</p>
+					<p>theshivamrana@gmail.com</p>
+				</div>
+			</div>
+			<div class="col-md-4 team-grid">
+				<div class="team-grid-info">
+					<h3>Zishan Ahmad</h3>
+					<p>989-941-4803</p>
+					<p>zishanrbp@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div style="color:#AAA; text-align:center">
+			<h4>Internship Fair</h4>
+			<h4>Faculty of Engineering and Technology</h4>
+			<h4><a href="http://jmi.ac.in">Jamia Millia Islamia</a></h4>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>
