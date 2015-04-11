@@ -2,111 +2,113 @@
 <html>
 
 <head>
-	<title>Internship Fair @ Jamia Millia Islamia</title>
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script type="applicatkion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-		});
-	</script>
+    <title>Internship Fair @ Jamia Millia Islamia</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="applicatkion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+    });
+    </script>
 </head>
 
 <body>
+    <div id="home" class="banner">
+        <div class="container">
+            <div class="banner-info">
+                <h1>THE <span class="colon">INTERNSHIP </span>FAIR</h1>
+                <p style="font-weight:bold ; color: #99cc33">2015</p>
+                <br>
+                <br>
+                <br>
+                <div class="view"><a class="scroll" href="#register">&nbsp;&nbsp;Register now&nbsp;&nbsp;</a></div>
+            </div>
+            <div class="banner-grids">
+                <div class="banner-grid text-center" style="width:100%">
+                    <div class="banner-left" style="width:60%; float:left">
+                        <ul>
+                            <li><strong>FACULTY OF ENGINEERING AND TECHNOLOGY<span style="text-align:center">JAMIA MILLIA ISLAMIA</span></strong></li>
+                            <br>
+                            <li>NEW DELHI</li>
+                        </ul>
+                    </div>
+                    <div class="banner-right" style="width:40%; float:right">
+                        <ul>
+                            <li><strong>ON<span style="text-align:center">25&nbsp; APRIL</span></strong></li>
+                            <br>
+                            <li>9:30 AM - 6:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="container">
+            <div class="fixed-header">
+                <div class="nav-right">
+                    <span class="menu"><img src="images/menu.png" alt="" /></span>
+                    <nav class="cl-effect-1">
+                        <ul class="nav1">
+                            <li><a class="scroll" href="#about">About</a></li>
+                            <li><a class="scroll" href="#register">Register</a></li>
+                            <li><a class="scroll" href="#schedule">Schedule</a></li>
+                            <!--<li><a class="scroll" href="#companies">Companies</a></li>-->
+                            <li><a class="scroll" href="#location">Location</a></li>
+                            <li><a class="scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <script>
+                    $("span.menu").click(function() {
+                        $("ul.nav1").slideToggle(300, function() {});
+                    });
+                    </script>
+                    <script>
+                    $(document).ready(function() {
+                        var navoffeset = $(".navigation").offset().top;
+                        $(window).scroll(function() {
+                            var scrollpos = $(window).scrollTop();
+                            if (scrollpos >= navoffeset) {
+                                $(".navigation").addClass("fixed");
+                            } else {
+                                $(".navigation").removeClass("fixed");
+                            }
+                        });
 
-<div id="home" class="banner">
-	<div class="container">
-		<div class="banner-info">
-			<h1>THE <span class="colon">INTERNSHIP </span>FAIR</h1>
-			<p style="font-weight:bold ; color: #99cc33">2015</p>
-			<br><br><br>
-			<div class="view"><a class="scroll" href="#register">&nbsp;&nbsp;Register now&nbsp;&nbsp;</a></div>
-		</div>
-		<div class="banner-grids">
-			<div class="banner-grid text-center" style="width:100%">
-				<div class="banner-left" style="width:60%; float:left">
-					<ul>
-						<li><strong>FACULTY OF ENGINEERING AND TECHNOLOGY<span style="text-align:center">JAMIA MILLIA ISLAMIA</span></strong></li>
-						<br>
-						<li>NEW DELHI</li>
-					</ul>
-				</div>
-				<div class="banner-right" style="width:40%; float:right">
-					<ul>
-						<li><strong>ON<span style="text-align:center">25&nbsp; APRIL</span></strong></li>
-						<br>
-						<li>9:30 AM - 6:00 PM</li>
-					</ul>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<div class="navigation">
-	<div class="container">
-		<div class="fixed-header">
-			<div class="nav-right">
-				<span class="menu"><img src="images/menu.png" alt="" /></span>
-					<nav class="cl-effect-1">
-						<ul class="nav1">
-							<li><a class="scroll" href="#about">About</a></li>
-							<li><a class="scroll" href="#register">Register</a></li>
-							<li><a class="scroll" href="#schedule">Schedule</a></li>
-							<!--<li><a class="scroll" href="#companies">Companies</a></li>-->
-							<li><a class="scroll" href="#location">Location</a></li>
-							<li><a class="scroll" href="#contact">Contact</a></li>
-						</ul>
-					</nav>
-					<script> 
-						$( "span.menu" ).click(function() {
-						$( "ul.nav1" ).slideToggle( 300, function() {
-						});
-						});
-					</script>
-						<script>
-						$(document).ready(function() {
-							 var navoffeset=$(".navigation").offset().top;
-							 $(window).scroll(function(){
-								var scrollpos=$(window).scrollTop(); 
-								if(scrollpos >=navoffeset){
-									$(".navigation").addClass("fixed");
-								}else{
-									$(".navigation").removeClass("fixed");
-								}
-							 });
-							 
-						});
-						</script>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<div id="about" class="our-services">
-	<div class="container">
-		<div class="our-info text-center">
-			<h2><span class="highlight">ABOUT</span> THE FAIR</h2>
-		</div>
-		<div class="our-grids">
-			<div class="our-grid" style="width:100%">
-				<p style="font-size:medium">Intended to bridge the gap between student interns and the startups, the <b>Placement Cell</b> of <b>Jamia Millia Islamia</b> will be hosting a one day <b>Internship Fair</b>. The fair will bring on board 40 startups seeking interns in various fields, giving them an option to select from a pool of talented students. The fair will be a perfect platform for students to meet potential employers, create networks and gain challenging opportunities to work for this summer.</p>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!-- <div class="about-bottom">
+                    });
+                    </script>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="our-services">
+        <div class="container">
+            <div class="our-info text-center">
+                <h2><span class="highlight">ABOUT</span> THE FAIR</h2>
+            </div>
+            <div class="our-grids">
+                <div class="our-grid" style="width:100%">
+                    <p style="font-size:medium">Intended to bridge the gap between student interns and the startups, the <b>Placement Cell</b> of <b>Jamia Millia Islamia</b> will be hosting a one day <b>Internship Fair</b>. The fair will bring on board 40 startups seeking interns in various fields, giving them an option to select from a pool of talented students. The fair will be a perfect platform for students to meet potential employers, create networks and gain challenging opportunities to work for this summer.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="about-bottom">
 	<div class="container">
 		<div class="bottom-grids" style="width:100%">
 			<div class="col-md-4 bottom-grid text-center">
@@ -128,933 +130,913 @@
 		</div>
 	</div>
 </div> -->
-<div id="register" class="pricing-table">
-	<div class="container">
-		<div class="pricing-info text-center">
-			<h2 style="color:white">REGISTRATION</h2>
-		</div>
-		<br><br><br>
-		<div class="pricing-grids">
-			<div class="pricing-grid">
-				<div class="basic-plan">
-					<h3>FOR COMPANIES</h3>
-				</div>
-				<br>
-				<ul>
-					<li class="h4">Registration is open</li>
-				</ul>
-				<div class="started"><a target="_blank" href="https://docs.google.com/forms/d/1KlgR7hArw0WwPxHqtm26jJAwV2LDMsIgle_xmEH_l6E/viewform?c=0&w=1">REGISTER NOW</a></div>
-			</div>
-			<div class="pricing-grid">
-				<div class="basic-plan">
-					<h3>FOR STUDENTS</h3>
-				</div>
-				<br>
-				<ul>
-					<li class="h4">Registration will open soon</li>
-				</ul>
-				<!--<div class="started"><a href="https://docs.google.com/forms/d/13hALtEBTgtf-QG2uB4kNKqo6UGgvkl4UvujlQXlfqmA/viewform">REGISTER NOW</a></div>-->
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<div id="schedule" class="our-blog">
-	<div class="container">
-		<div class="our-blog-info text-center">
-			<h2><span class="highlight">SCHEDULE</span></h2>
-			<br><br><br>
-			<div class="august">25 April 2015</div>
-		</div>
-		<div class="blog-grids">
-			<div class="blog-post">
-				<div class="blog-txt">
-					<div class="caption-text">
-						<div class="caption-left">
-							<p>9:30 AM - 10:30 AM</p>
-							<br>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<h4>On-spot registrations for students</h4>
-					<p>Students who haven't registered themselves before can do so during this hour.</p>
-					<div class="clearfix"></div>
-
-
-					<div class="caption-text">
-						<div class="caption-left">
-							<p>10:30 AM - 1:00 PM</p>
-							<br>
-						</div>
-						<div class="clearfix"></div>
-				
-					<h4>Commencement of fair and express interviews.</h4>
-					<br><br>
-				</div>				
-					<div class="caption-text">
-						<div class="caption-left">
-							<p>1:00 PM - 2:00 PM</p>
-							<br>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<h4>Lunch break</h4>
-					<br><br>
-			</div>
-			</div>
-		</div>
-		<div class="clearfix"></div>
-		<div class="august">Post break</div>
-		<div class="blog-grids">
-			<div class="blog-post">
-				<div class="blog-txt">
-					<div class="caption-text">
-						<div class="caption-left">
-							<p>2:00 PM - 6:00 PM</p>
-							<br>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<h4>Express interviews continue</h4>
-					<br><br>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="august">Fair ends</div>
-	</div>
-</div>
-
-<div id="companies" class="our-works">
-	<div class="container">
-		<div class="our-work-info text-center wow bounceIn" data-wow-delay="0.4s">
-			<h2><span class="highlight">COMPANIES</span></h2>
-			<p>More companies to be added soon!</p>
-		</div>
-		<div class="portfolio-grid">
-					<!-- <ul id="filters">
-						<li class="active"><span class="filter " data-filter="engineering commerce law arts">All</span> </li>
-						<li><span class="filter" data-filter="engineering">Engineering</span></li>
-						<li><span class="filter" data-filter="commerce">Commerce</span></li>
-						<li><span class="filter" data-filter="law">Law</span></li>
-						<li><span class="filter" data-filter="arts">Arts</span></li>
-
-					</ul> -->
-			<div id="portfoliolist">
-						<div class="port-grid">
-							<div class="portfolio commerce mix_all" data-cat="commerce" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-										<a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-											<img class="img-responsive grey" src="images/ic/poll_dance.png"  alt=""  />
-                                            <div class="simple-in">
-                                                <ul class="social img-one">
-                                                    <li><span> </span></li>
-                                                    <li><span class="text"> </span></li>
-                                                </ul>
-                                                <div class="clearfix"> </div>
-                                            </div>
-										</a>
-										<div class="simple-out">
-											<h4>Poll Dance</h4>
-										</div>							
-								</div>
-							</div>				
-							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
-									<div class="portfolio-wrapper">		
-										<a href="#small-dialog1" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-											<img class="img-responsive" src="images/ic/rutogo.png" alt=""/>
-                                            <div class="simple-in one">
-                                                <ul class="social img-two">
-                                                    <li><span> </span></li>
-                                                    <li><span class="text"> </span></li>
-                                                </ul>
-                                                <div class="clearfix"> </div>
-                                            </div>
-										</a>
-											<div class="simple-out">
-													<h4>Rutogo</h4>
-											</div>							
-									</div>
-							</div>		
-							<div class="portfolio law mix_all" data-cat="law" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper">		
-									<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-										<img class="img-responsive" src="images/ic/instalively.png"  alt="" />
-                                        <div class="simple-in two">
-                                            <ul class="social img-three">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>Instalively</h4>
-									
-									</div>							
-								</div>
-							</div>
-						
-							<div class="portfolio arts mix_all" data-cat="arts" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-									<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-									<img class="img-responsive" src="images/ic/heybiz.jpeg" alt=""  />
-									<div class="simple-in three">
+    <div id="register" class="pricing-table">
+        <div class="container">
+            <div class="pricing-info text-center">
+                <h2 style="color:white">REGISTRATION</h2>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="pricing-grids">
+                <div class="pricing-grid">
+                    <div class="basic-plan">
+                        <h3>FOR COMPANIES</h3>
+                    </div>
+                    <br>
+                    <ul>
+                        <li class="h4">Registration is open</li>
+                    </ul>
+                    <div class="started"><a target="_blank" href="https://docs.google.com/forms/d/1KlgR7hArw0WwPxHqtm26jJAwV2LDMsIgle_xmEH_l6E/viewform?c=0&w=1">REGISTER NOW</a></div>
+                </div>
+                <div class="pricing-grid">
+                    <div class="basic-plan">
+                        <h3>FOR STUDENTS</h3>
+                    </div>
+                    <br>
+                    <ul>
+                        <li class="h4">Registration will open soon</li>
+                    </ul>
+                    <!--<div class="started"><a href="https://docs.google.com/forms/d/13hALtEBTgtf-QG2uB4kNKqo6UGgvkl4UvujlQXlfqmA/viewform">REGISTER NOW</a></div>-->
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div id="schedule" class="our-blog">
+        <div class="container">
+            <div class="our-blog-info text-center">
+                <h2><span class="highlight">SCHEDULE</span></h2>
+                <br>
+                <br>
+                <br>
+                <div class="august">25 April 2015</div>
+            </div>
+            <div class="blog-grids">
+                <div class="blog-post">
+                    <div class="blog-txt">
+                        <div class="caption-text">
+                            <div class="caption-left">
+                                <p>9:30 AM - 10:30 AM</p>
+                                <br>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <h4>On-spot registrations for students</h4>
+                        <p>Students who haven't registered themselves before can do so during this hour.</p>
+                        <div class="clearfix"></div>
+                        <div class="caption-text">
+                            <div class="caption-left">
+                                <p>10:30 AM - 1:00 PM</p>
+                                <br>
+                            </div>
+                            <div class="clearfix"></div>
+                            <h4>Commencement of fair and express interviews.</h4>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="caption-text">
+                            <div class="caption-left">
+                                <p>1:00 PM - 2:00 PM</p>
+                                <br>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <h4>Lunch break</h4>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="august">Post break</div>
+            <div class="blog-grids">
+                <div class="blog-post">
+                    <div class="blog-txt">
+                        <div class="caption-text">
+                            <div class="caption-left">
+                                <p>2:00 PM - 6:00 PM</p>
+                                <br>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <h4>Express interviews continue</h4>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="august">Fair ends</div>
+        </div>
+    </div>
+    <div id="companies" class="our-works">
+        <div class="container">
+            <div class="our-work-info text-center wow bounceIn" data-wow-delay="0.4s">
+                <h2><span class="highlight">COMPANIES</span></h2>
+                <p>More companies to be added soon!</p>
+            </div>
+            <div class="portfolio-grid">
+                <ul id="filters" class="container text-center">
+                    <li class="active"><span class="filter " data-filter="engineering commerce law arts">All</span> </li>
+                    <li><span class="filter" data-filter="engineering">Engineering</span></li>
+                    <li><span class="filter" data-filter="commerce">Commerce</span></li>
+                    <li><span class="filter" data-filter="law">Law</span></li>
+                    <li><span class="filter" data-filter="arts">Arts</span></li>
+                </ul>
+                <div id="portfoliolist">
+                    <div class="port-grid">
+                        <div class="portfolio commerce mix_all" data-cat="commerce" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive grey" src="images/ic/poll_dance.png" alt="" />
+                                    <div class="simple-in five">
                                         <ul class="social img-one">
                                             <li><span> </span></li>
                                             <li><span class="text"> </span></li>
                                         </ul>
-										<div class="clearfix"> </div>
-									</div>	
-									</a>
-									<div class="simple-out">
-										<h4>Hey Biz</h4>
-										
-									</div>							
-								</div>
-							</div>	
-							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-									<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-										<img class="img-responsive" src="images/ic/easeyourshop.png" alt=""  />
-                                        <div class="simple-in four">
-                                            <ul class="social img-two">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-										</div>	
-									</a>
-										<div class="simple-out">
-											<h4>XPdire Solutions</h4>
-										</div>							
-								</div>
-							</div>			
-						</div>	
-						<div class="port-grid">
-							<div class="portfolio law mix_all" data-cat="law" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper">		
-									<a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-										<img class="img-responsive" src="images/ic/observe.jpg" alt=""  />
-                                        <div class="simple-in five">
-                                            <ul class="social img-three">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>
-									</a>
-									<div class="simple-out">
-										<h4>Observe Design</h4>
-									</div>
-								</div>
-							</div>
-							<div class="portfolio commerce mix_all" data-cat="commerce" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper">		
-									<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive" src="images/ic/perkxx.jpg" alt=""  />
-                                        <div class="simple-in six">
-                                            <ul class="social img-one">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>Perkxx</h4>
-									</div>							
-								</div>
-							</div>
-							<div class="portfolio arts mix_all" data-cat="arts" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper">		
-									<a href="#small-dialog7" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive" src="images/ic/tinqr.png" alt=""  />						    
-                                        <div class="simple-in seven">
-                                            <ul class="social img-two">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>
-									</a>
-									<div class="simple-out">
-										<h4>Tinqr Services</h4>
-								
-									</div>							
-								</div>
-							</div>
-							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-									<a href="#small-dialog8" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive" src="images/ic/memilog.png" alt=""  />
-                                        <div class="simple-in six">
-                                            <ul class="social img-three">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>Memilog</h4>
-									</div>							
-								</div>
-							</div>
-							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-									<a href="#small-dialog9" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive" src="images/ic/sarvoday.jpg" alt=""  />
-                                        <div class="simple-in six">
-                                            <ul class="social img-one">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>Sarvodaya Ventures</h4>
-									</div>							
-								</div>
-							</div>
-							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-									<a href="#small-dialog10" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive" src="images/ic/inc42.jpg" alt=""  />
-                                        <div class="simple-in six">
-                                            <ul class="social img-two">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>Inc 42</h4>
-									</div>							
-								</div>
-							</div>
-							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-									<a href="#small-dialog11" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive" src="images/ic/iblaze.png" alt=""  />
-                                        <div class="simple-in six">
-                                            <ul class="social img-three">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>Blaze Infomatiks</h4>
-									</div>							
-								</div>
-							</div>
-						</div>
-
-						<div class="port-grid">
-							<div class="portfolio law mix_all" data-cat="law" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper">		
-									<a href="#small-dialog12" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-										<img class="img-responsive" src="images/ic/clearmydues.png" alt=""  />
-                                        <div class="simple-in five">
-                                            <ul class="social img-three">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>
-									</a>
-									<div class="simple-out">
-										<h4>Clear My Dues</h4>
-									</div>
-								</div>
-							</div>
-							<div class="portfolio commerce mix_all" data-cat="commerce" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper">		
-									<a href="#small-dialog13" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive black" src="images/ic/acelerar.png" alt=""  />
-                                        <div class="simple-in six">
-                                            <ul class="social img-one">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>Acelerar Technologies</h4>
-									</div>							
-								</div>
-							</div>
-							<div class="portfolio arts mix_all" data-cat="arts" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper">		
-									<a href="#small-dialog14" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive black" src="images/ic/greymeter.png" alt=""  />						    
-                                        <div class="simple-in seven">
-                                            <ul class="social img-two">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>
-									</a>
-									<div class="simple-out">
-										<h4>Greymeter Services</h4>
-								
-									</div>							
-								</div>
-							</div>
-							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-									<a href="#small-dialog15" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive" src="images/ic/wetravelsolo.jpg" alt=""  />
-                                        <div class="simple-in six">
-                                            <ul class="social img-three">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>WeTravelSolo</h4>
-									</div>							
-								</div>
-							</div>
-							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-									<a href="#small-dialog16" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive" src="images/ic/a.jpg" alt=""  />
-                                        <div class="simple-in six">
-                                            <ul class="social img-one">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>Buddzter Web Services</h4>
-									</div>							
-								</div>
-							</div>
-							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-									<a href="#small-dialog17" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive" src="images/ic/floweraura.png" alt=""  />
-                                        <div class="simple-in six">
-                                            <ul class="social img-two">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>Flower Aura</h4>
-									</div>							
-								</div>
-							</div>
-							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-									<a href="#small-dialog18" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive" src="images/ic/gbindia.png" alt=""  />
-                                        <div class="simple-in six">
-                                            <ul class="social img-three">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>Global Business Incubator</h4>
-									</div>							
-								</div>
-							</div>
-							<div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
-								<div class="portfolio-wrapper ">		
-									<a href="#small-dialog19" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
-
-										<img class="img-responsive" src="images/ic/wooo.png" alt=""  />
-                                        <div class="simple-in six">
-                                            <ul class="social img-three">
-                                                <li><span> </span></li>
-                                                <li><span class="text"> </span></li>
-                                            </ul>
-                                            <div class="clearfix"> </div>
-                                        </div>	
-									</a>
-									<div class="simple-out">
-										<h4>Wooo</h4>
-									</div>							
-								</div>
-							</div>
-						</div>
-
-			</div>	
-					<script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
-					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-					<div id="small-dialog" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/poll_dance.png" alt="" />
-								<h4>Poll Dance</h4>
-								<p>Profile 1:- Marketing - (2 positions)<br>
-- Reaching out to digital news agencies for coverage<br>
-- Making collateral<br>
-- Designing a marketing strategy for reaching out to students<br><br>
-
-Profile 2:- Technology - (2 positions)<br>
-- Coding for PollDance in PHP Code Igniter frame work</p>
-						</div>
-					</div>
-					<div id="small-dialog1" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/rutogo.png" alt="" />
-							<h4>Squarehoot Hikes</h4>
-							<p> - Android Developer<br>
- - Python, Django Developer<br>
- - UI/UX designer</p>
-						</div>
-					</div>
-					<div id="small-dialog2" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/instalively.png" alt="" />
-							<h4>Instalively</h4>
-							<p>Content Awaited</p>
-						</div>
-					</div>
-					<div id="small-dialog3" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/heybiz.jpeg" alt="" />
-							<h4>HeyBiz</h4>
-							<p>
-HeyBiz is looking for full time marketing interns who can help us to viral HeyBiz mobile application online or offline.<br>
-
-Interns have flexibility to work from anywhere in Delhi| NCR and can report to office on weekly or 15 days basis as and when required.<br>
-
-HeyBiz is ready to hire interns from April Mid till July .
-<br>
-Internship will be paid internship and proper certificate will performance grading will be provided to interns.
-<br>
-Interns will be given reasonable  minimum targets to meet  and incentives on over and above minimum targets.
-<br>
-It is going to be complete outdoor marketing internship wherein they will be provided a proper training and knowledge about HeyBiz Mobile application beforehand and guidance as and when required during internship.
-<br>
-Mandatory - Every student who is applying for internship has to download and register on HeyBiz to know more about HeyBiz.
-<br>
-Anyone who is not having iOS and Android can register through Web(www.heybiz.co)with complete verification process.
-</p>
-						</div>
-					</div>
-					<div id="small-dialog4" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/easeyourshop.png" alt="" />
-							<h4>XPdire Solutions</h4>
-							<p>Android Developer:- Need an awesome developer to revamp our app and to add new different features.
-<br>
- - Front End Developer:- HTML,CSS,AJAX, JQUERY<br>
- - Offline marketing and promotion of easeyourshop.com
-</p>
-						</div>
-					</div>
-					<div id="small-dialog5" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/a.jpg" alt="" />
-							<h4>Perkxx</h4>
-							<p>B2B Business Development</p>
-						</div>
-					</div>
-					<div id="small-dialog6" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/observe.jpg" alt="" />
-							<h4>Observe Design</h4>
-							<p>Volunteers for Social awareness campaign<br>
-We are looking for interns to promote ""Swachh Hasth Abhiyan"" (clean hands mission) campaign to create awareness among healthcare workers, food handlers about hand hygiene. We will give them all the basic information regarding the importance of hand hygiene, pain points of the problem and the magnitude of social impact that the campaign is capable of bringing. 
-Intern/volunteer will be building relationship with hospitals/hotels/general public. The candidate will be the 'on foot soldier' who will be spreading the theme of the campaign by visiting hospitals, star hotels and healthcare camps, distributing flyers and sanitizer samples. <br>
-Students with passion to bring a change and work for a cause, with good communication and language (both Hindi and English) skills will be of best fit for the position. Students pursuing masters/bachelors in any field can apply.</p>
-						</div>
-					</div>
-					<div id="small-dialog7" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/tinqr.png" alt="" />
-							<h4>Tinqr Services</h4>
-							<p>ABOUT US<br>
-Are you a people person? Would you like to be part of an emerging company? Do you think big, take chances and enjoy seeing the impact of your work? If you can answer yes to any of these questions, you will definitely enjoy working with us. Tinqr is a startup based out of New Delhi launched by alumni from IIM Bangalore, XLRI, BITS Pilani. At Tinqr, we are working to create an amazing payment experience for friends with a fun and trendy bill splitting app that works to preserve the fun and eliminate the awkwardness of everyday transactions among friends.
- <br>
-JOB DESCRIPTION<br>
-The opportunity involves understanding how an enterprise conducts market research and develops its sales channels. You will learn how an organization analyses qualitative observations and quantitative data to devise effective marketing strategies. Your responsibilities will primarily involve:<br>
-•        Conducting surveys at restaurants to collect primary data and other qualitative observations<br>
-•        Create brand awareness of the Start-up at various events/meet-ups/ college fests<br>
-•        Generate Leads, set meetings, close great local merchants<br>
-•        Deliver presales product demos, technical presentations and sales proposals<br>
-•        Sign-up new merchants through in-person meetings, cold calls and networking events<br>
-•        Develop and implement offline, online marketing strategies<br>
-<br>
-It will be a perfect opportunity to learn the sales and marketing process in an emerging firm. You will have the freedom to implement your own ideas and see the impact of your work directly. Get a flavour of how companies launch products and expand their customer base.
-<br><br>
-KEY ESSENTIALS<br>
-•        Excellent communication skills – most important<br>
-•        Good observational and analytical skills<br>
-•        Enthusiasm and commitment towards work<br>
-•        Prior experience in organizing and promoting college societies/events, sourcing sponsors etc<br>
-•        Have a strong desire to pursue a career in outside sales<br>
-<br>
-WHAT’S IN IT FOR YOU<br>
-•        Exposure to a dynamic startup culture<br>
-•        Opportunity to work directly with the Co-Founders in product launch and expansion<br>
-•        Full Time Position will be offered to suitable candidates<br>
-</p>
-						</div>
-					</div>
-					<div id="small-dialog8" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/memilog.png" alt="" />
-							<h4>Memilog</h4>
-							<p>Creative Content Writer - people with good communication and writing skills , who can help us write creatives for our blog, press writeups, presentations, etc which will help us connect with people.
-<br>
-Brand Outreach Intern - Brand Ambassador to make out the word about our product to people.</p>
-						</div>
-					</div>
-					<div id="small-dialog9" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/sarvoday.jpg" alt="" />
-							<h4>Sarvodaya Ventures</h4>
-							<p> - Sales & Marketing<br>
- - ASP.NET developer<br>
- - Content Writer</p>
-						</div>
-					</div>
-					<div id="small-dialog10" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/inc42.jpg" alt="" />
-							<h4>Inc42</h4>
-							<p>Content Writers<br>
- - Reports/Journalist<br>
- - Analyst</p>
-						</div>
-					</div>
-					<div id="small-dialog11" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/iblaze.png" alt="" />
-							<h4>Blaze Infomatiks</h4>
-							<p> - Web Development & Designing.<br>
- - Social Media Marketing.<br>
- - Content Management.<br>
- - Market Research.<br>
- - Consumer Behavior.<br>
- - Business Development.<br>
- - Marketing Management.</p>
-						</div>
-					</div>
-					<div id="small-dialog12" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/clearmydues.png" alt="" />
-							<h4>Clear My Dues</h4>
-							<p>The selected intern(s) will work on following during the internships:<br> 
-1. Contacting clients and DSA's.<br>
-2. Conducting market research and marketing.<br>
-3. Creating brand awareness among bank representatives and customers.<br>
-<br>
-Who can apply:<br>
-Anyone with a commerce background looking to work in a challenging environment with a start-up.The posting consists of field work as well, so the applicant must be suited for this as well.</p>
-						</div>
-					</div>
-					<div id="small-dialog13" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/acelerar.png" alt="" />
-							<h4>Acelerar Technologies</h4>
-							<p>Content Writing Internship/ Management Trainee<br>
-
-Location – Noida, sector 63
-<br>
-Desired Skills–
-<br>
-1) Good command over written and spoken English and a passion for writing<br>
-2) Good analytical and research skills and creative bent of mind<br>
-3) Opportunity to gain domain experience and responsible for opionated writing and frequently posting new content to the internet<br>
-<br>
-
-Candidates Profile –
-1) PG in English/ Literature/ Mass Communication or Journalism with excellent command over written English can apply.<br>
-2) Expert knowledge of social networking channels
-</p>
-						</div>
-					</div>
-					<div id="small-dialog14" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/greymeter.png" alt="" />
-							<h4>Greymeter Services</h4>
-							<p>Profile 1: Marketing and strategy
-<br>
-Profile 2: Content developer</p>
-						</div>
-					</div>
-					<div id="small-dialog15" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/wetravelsolo.jpg" alt="" />
-							<h4>WeTravelSolo</h4>
-							<p>Job Description<br>
-<br> - Utilize word of mouth marketing, Internet marketing, and Internet marketing techniques to increase traffic, brand awareness.
-<br> - Leverage social networks to strengthen relationships with existing clients and increase the number of impressions on potential clients
-<br> - Analyze customer and competitor trends, industry data to help business unit optimize marketing programs, go to market strategies, and capitalize on new opportunities
-<br> - Planning and execution of on and off site events, meetings, and familiarization trips for, but not limited to, Marketing/Sales, Community Relations, and Government Relations.
-<br> - Handling post event evaluations/recaps<br>
-If Technical Student
-<br> - Design and build advanced applications for the Android platform  Good knowledge of HTML / HTML5 / CSS / CSS3 / JavaScript / JQuery<br>
-Knowledge and Skills Required
-<br> - Excellent written and oral communication skills
-<br> - Understanding of Linkedin, Facebook, Twitter & Youtube
-<br> - Fearless attitude towards technology and a willingness to learn
-<br> - Loves Travelling, Photography, Event Planning</p>
-						</div>
-					</div>
-					<div id="small-dialog16" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/buddzter.png" alt="" />
-							<h4>Buddzter Web Services</h4>
-							<p>Content Awaited</p>
-						</div>
-					</div>
-					<div id="small-dialog17" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/floweraura.png" alt="" />
-							<h4>Flower Aura</h4>
-							<p>CONTENT WRITER<br>
-<br>
-JOB DESCRIPTION:
-<br>- Writing on page articles
-<br>- Coming up with ideas for blogs and other social media content
-<br>- Creative writing as per trends
-<br>- Handling Social Media content
-<br>- Content for Emailers
-<br>- Content for PR stories
-<br>
-<br>JOB REQUIREMENT:
-<br>- Excellent Written skills
-<br>- Creative Thinking
-<br>- Excellent Communication Skills
-<br>
-<br>VIDEO EDITOR
-<br>
-<br>JOB DESCRIPTION:
-<br>- Editing videos for official purposes
-<br>- Helping in shooting videos for the same
-<br>- Creative editing
-<br>
-<br>JOB REQUIREMENT:
-<br>- Excellent knowledge of editing softwares
-<br>- Complete understanding of camera
-<br>- Understanding of Rules of Photography - still and motion
-
-</p>
-						</div>
-					</div>
-					<div id="small-dialog18" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/gbindia.png" alt="" />
-							<h4>Global Business Incubator</h4>
-							<p>Position: Community Development Manager<br>
-<br>
-Overview of the role: The Community Development Manager is responsible for helping develop the Delhi and north India community. This role combines working with the Directors directly to identify institutions where we can create impact (both bottom up and top down) and also external outreach and interactions with community leaders and key partners.<br>
-<br>
-<br>Term: TBD
-<br>
-<br>Responsibilities include:
-<br>
-<br>• Expansion: Outreach to identify new partners to expand the academic incubator network of GBI across Delhi.
-<br>• Pioneer methods to expand programming into non-traditional startup communities, including all Tier I and Tier II cities
-<br>
-<br>Community Development:
-<br> Alumni Happiness & Well Being
-<br>• Collect community feedback to identify successes / gaps in community value proposition
-<br>• Maintain database of alumni/students + identify opportunities to broadcast success stories
-<br>• Coordinate different community gatherings like meetups, outreach sessions, etc.)
-<br>
-<br>Marketing & Communications:
-<br>- Maintain GBI India social media accounts
-<br>-  Work with the marketing team to design and implement marketing practices and campaigns with regional needs and preferences
-<br>
-<br>Reporting / communications:
-<br>• Participate in weekly meetings.
-<br>• Report directly to the North India Director - GBI
-<br>
-<br>Perks except compensation:
-
-<br>• Travel across South Asia: Our staff has travelled to 22 countries. You have the opportunity to travel and work across South Asia.
-<br>• Work anytime, anywhere: Work your own hours from anywhere, including two of our regional offices in India.
-</p>
-						</div>
-					</div>
-					<div id="small-dialog19" class="mfp-hide">
-						<div class="image-top">
-							<img src="images/ic/wooo.png" alt="" />
-							<h4>Wooo</h4>
-							<p><br>-Android developer
-<br>-Machine learning
-<br>-Outreach</p>
-						</div>
-					</div>
-			<script>
-						$(document).ready(function() {
-						$('.popup-with-zoom-anim').magnificPopup({
-							type: 'inline',
-							fixedContentPos: false,
-							fixedBgPos: true,
-							overflowY: 'auto',
-							closeBtnInside: true,
-							preloader: false,
-							midClick: true,
-							removalDelay: 300,
-							mainClass: 'my-mfp-zoom-in'
-						});																
-						});
-			</script>
-				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-					<script type="text/javascript">
-							$(function () {
-								var filterList = {
-									init: function () {
-										$('#portfoliolist').mixitup({
-											targetSelector: '.portfolio',
-											filterSelector: '.filter',
-											effects: ['fade'],
-											easing: 'snap',
-											onMixEnd: filterList.hoverEffect()
-										});				
-									},
-									hoverEffect: function () {
-										$('#portfoliolist .portfolio').hover(
-											function () {
-												$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-												$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
-											},
-											function () {
-												$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-												$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
-											}		
-										);				
-									}
-								};
-								filterList.init();
-							});	
-					</script>
-				<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-
-
-<div id="location" class="contact-us">
-	<div class="container">
-		<div class="get-info text-center">
-			<h2 style="color: white">LOCATION</h2>
-		</div>
-		<br><br>
-		<div class="map" style="width:100%">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.160339557983!2d77.28024315502611!3d28.560131705790567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x6a6dc45ff88d2ec5!2sFaculty+of+Engineering+and+Technology!5e0!3m2!1sen!2sin!4v1428241526838" frameborder="0" style="border:0"></iframe>
-			</div>
-		<div class="contact-grids">
-			<!-- <div class="col-md contact-grid text-center">
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4><br>Poll Dance</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a href="#small-dialog1" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/rutogo.png" alt="" />
+                                    <div class="simple-in five">
+                                        <ul class="social img-two">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4><br>Rutogo</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio law mix_all" data-cat="law" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/instalively.png" alt="" />
+                                    <div class="simple-in two">
+                                        <ul class="social img-three">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Instalively</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio arts mix_all" data-cat="arts" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/heybiz.jpeg" alt="" />
+                                    <div class="simple-in eight">
+                                        <ul class="social img-one">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4><br>Hey Biz</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/easeyourshop.png" alt="" />
+                                    <div class="simple-in four">
+                                        <ul class="social img-two">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>XPdire Solutions</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port-grid">
+                        <div class="portfolio law mix_all" data-cat="law" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/observe.jpg" alt="" />
+                                    <div class="simple-in one">
+                                        <ul class="social img-three">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4><br>Observe Design</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio commerce mix_all" data-cat="commerce" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/perkxx.jpg" alt=""  />
+                                    <div class="simple-in six">
+                                        <ul class="social img-one">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Perkxx</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio arts mix_all" data-cat="arts" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a href="#small-dialog7" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/tinqr.png" alt="" />
+                                    <div class="simple-in two">
+                                        <ul class="social img-two">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Tinqr Services</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog8" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/memilog.png" alt="" />
+                                    <div class="simple-in four">
+                                        <ul class="social img-three">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Memilog</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog9" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/sarvoday.jpg" alt="" />
+                                    <div class="simple-in six">
+                                        <ul class="social img-one">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4><br>Sarvodaya Ventures</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog10" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/inc42.jpg" alt="" />
+                                    <div class="simple-in six">
+                                        <ul class="social img-two">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Inc 42</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog11" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/iblaze.png" alt="" />
+                                    <div class="simple-in six">
+                                        <ul class="social img-three">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Blaze Infomatiks</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port-grid">
+                        <div class="portfolio law mix_all" data-cat="law" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a href="#small-dialog12" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/clearmydues.png" alt="" />
+                                    <div class="simple-in ten">
+                                        <ul class="social img-three">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Clear My Dues</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio commerce mix_all" data-cat="commerce" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a href="#small-dialog13" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive black" src="images/ic/acelerar.png" alt="" />
+                                    <div class="simple-in six">
+                                        <ul class="social img-one">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Acelerar Technologies</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio arts mix_all" data-cat="arts" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper">
+                                <a href="#small-dialog14" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive black" src="images/ic/greymeter.png" alt="" />
+                                    <div class="simple-in seven">
+                                        <ul class="social img-two">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Greymeter Services</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog15" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/wetravelsolo.jpg" alt="" />
+                                    <div class="simple-in six">
+                                        <ul class="social img-three">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>WeTravelSolo</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog16" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/a.jpg" alt="" />
+                                    <div class="simple-in six">
+                                        <ul class="social img-one">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Buddzter Web Services</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog17" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/floweraura.png" alt="" />
+                                    <div class="simple-in four">
+                                        <ul class="social img-two">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Flower Aura</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog18" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/gbindia.png" alt="" />
+                                    <div class="simple-in six">
+                                        <ul class="social img-three">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Global Business Incubator</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio engineering mix_all" data-cat="engineering" style="display: inline-block; opacity: 1;">
+                            <div class="portfolio-wrapper ">
+                                <a href="#small-dialog19" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                                    <img class="img-responsive" src="images/ic/wooo.png" alt="" />
+                                    <div class="simple-in six">
+                                        <ul class="social img-three">
+                                            <li><span> </span></li>
+                                            <li><span class="text"> </span></li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                                <div class="simple-out">
+                                    <h4>Wooo</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+                <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+                <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+                <div id="small-dialog" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/poll_dance.png" alt="" />
+                        <h4>Poll Dance</h4>
+                        <p>Profile 1:- Marketing - (2 positions)
+                            <br> - Reaching out to digital news agencies for coverage
+                            <br> - Making collateral
+                            <br> - Designing a marketing strategy for reaching out to students
+                            <br>
+                            <br> Profile 2:- Technology - (2 positions)
+                            <br> - Coding for PollDance in PHP Code Igniter frame work</p>
+                    </div>
+                </div>
+                <div id="small-dialog1" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/rutogo.png" alt="" />
+                        <h4>Squarehoot Hikes</h4>
+                        <p> - Android Developer
+                            <br> - Python, Django Developer
+                            <br> - UI/UX designer</p>
+                    </div>
+                </div>
+                <div id="small-dialog2" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/instalively.png" alt="" />
+                        <h4>Instalively</h4>
+                        <p>Content Awaited</p>
+                    </div>
+                </div>
+                <div id="small-dialog3" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/heybiz.jpeg" alt="" />
+                        <h4>HeyBiz</h4>
+                        <p>
+                            HeyBiz is looking for full time marketing interns who can help us to viral HeyBiz mobile application online or offline.
+                            <br> Interns have flexibility to work from anywhere in Delhi| NCR and can report to office on weekly or 15 days basis as and when required.
+                            <br> HeyBiz is ready to hire interns from April Mid till July .
+                            <br> Internship will be paid internship and proper certificate will performance grading will be provided to interns.
+                            <br> Interns will be given reasonable minimum targets to meet and incentives on over and above minimum targets.
+                            <br> It is going to be complete outdoor marketing internship wherein they will be provided a proper training and knowledge about HeyBiz Mobile application beforehand and guidance as and when required during internship.
+                            <br> Mandatory - Every student who is applying for internship has to download and register on HeyBiz to know more about HeyBiz.
+                            <br> Anyone who is not having iOS and Android can register through Web(www.heybiz.co)with complete verification process.
+                        </p>
+                    </div>
+                </div>
+                <div id="small-dialog4" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/easeyourshop.png" alt="" />
+                        <h4>XPdire Solutions</h4>
+                        <p>Android Developer:- Need an awesome developer to revamp our app and to add new different features.
+                            <br> - Front End Developer:- HTML,CSS,AJAX, JQUERY
+                            <br> - Offline marketing and promotion of easeyourshop.com
+                        </p>
+                    </div>
+                </div>
+                <div id="small-dialog5" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/a.jpg" alt="" />
+                        <h4>Perkxx</h4>
+                        <p>B2B Business Development</p>
+                    </div>
+                </div>
+                <div id="small-dialog6" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/observe.jpg" alt="" />
+                        <h4>Observe Design</h4>
+                        <p>Volunteers for Social awareness campaign
+                            <br> We are looking for interns to promote ""Swachh Hasth Abhiyan"" (clean hands mission) campaign to create awareness among healthcare workers, food handlers about hand hygiene. We will give them all the basic information regarding the importance of hand hygiene, pain points of the problem and the magnitude of social impact that the campaign is capable of bringing. Intern/volunteer will be building relationship with hospitals/hotels/general public. The candidate will be the 'on foot soldier' who will be spreading the theme of the campaign by visiting hospitals, star hotels and healthcare camps, distributing flyers and sanitizer samples.
+                            <br> Students with passion to bring a change and work for a cause, with good communication and language (both Hindi and English) skills will be of best fit for the position. Students pursuing masters/bachelors in any field can apply.</p>
+                    </div>
+                </div>
+                <div id="small-dialog7" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/tinqr.png" alt="" />
+                        <h4>Tinqr Services</h4>
+                        <p>ABOUT US
+                            <br> Are you a people person? Would you like to be part of an emerging company? Do you think big, take chances and enjoy seeing the impact of your work? If you can answer yes to any of these questions, you will definitely enjoy working with us. Tinqr is a startup based out of New Delhi launched by alumni from IIM Bangalore, XLRI, BITS Pilani. At Tinqr, we are working to create an amazing payment experience for friends with a fun and trendy bill splitting app that works to preserve the fun and eliminate the awkwardness of everyday transactions among friends.
+                            <br> JOB DESCRIPTION
+                            <br> The opportunity involves understanding how an enterprise conducts market research and develops its sales channels. You will learn how an organization analyses qualitative observations and quantitative data to devise effective marketing strategies. Your responsibilities will primarily involve:
+                            <br> • Conducting surveys at restaurants to collect primary data and other qualitative observations
+                            <br> • Create brand awareness of the Start-up at various events/meet-ups/ college fests
+                            <br> • Generate Leads, set meetings, close great local merchants
+                            <br> • Deliver presales product demos, technical presentations and sales proposals
+                            <br> • Sign-up new merchants through in-person meetings, cold calls and networking events
+                            <br> • Develop and implement offline, online marketing strategies
+                            <br>
+                            <br> It will be a perfect opportunity to learn the sales and marketing process in an emerging firm. You will have the freedom to implement your own ideas and see the impact of your work directly. Get a flavour of how companies launch products and expand their customer base.
+                            <br>
+                            <br> KEY ESSENTIALS
+                            <br> • Excellent communication skills – most important
+                            <br> • Good observational and analytical skills
+                            <br> • Enthusiasm and commitment towards work
+                            <br> • Prior experience in organizing and promoting college societies/events, sourcing sponsors etc
+                            <br> • Have a strong desire to pursue a career in outside sales
+                            <br>
+                            <br> WHAT’S IN IT FOR YOU
+                            <br> • Exposure to a dynamic startup culture
+                            <br> • Opportunity to work directly with the Co-Founders in product launch and expansion
+                            <br> • Full Time Position will be offered to suitable candidates
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <div id="small-dialog8" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/memilog.png" alt="" />
+                        <h4>Memilog</h4>
+                        <p>Creative Content Writer - people with good communication and writing skills , who can help us write creatives for our blog, press writeups, presentations, etc which will help us connect with people.
+                            <br> Brand Outreach Intern - Brand Ambassador to make out the word about our product to people.</p>
+                    </div>
+                </div>
+                <div id="small-dialog9" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/sarvoday.jpg" alt="" />
+                        <h4>Sarvodaya Ventures</h4>
+                        <p> - Sales & Marketing
+                            <br> - ASP.NET developer
+                            <br> - Content Writer</p>
+                    </div>
+                </div>
+                <div id="small-dialog10" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/inc42.jpg" alt="" />
+                        <h4>Inc42</h4>
+                        <p>Content Writers
+                            <br> - Reports/Journalist
+                            <br> - Analyst</p>
+                    </div>
+                </div>
+                <div id="small-dialog11" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/iblaze.png" alt="" />
+                        <h4>Blaze Infomatiks</h4>
+                        <p> - Web Development & Designing.
+                            <br> - Social Media Marketing.
+                            <br> - Content Management.
+                            <br> - Market Research.
+                            <br> - Consumer Behavior.
+                            <br> - Business Development.
+                            <br> - Marketing Management.</p>
+                    </div>
+                </div>
+                <div id="small-dialog12" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/clearmydues.png" alt="" />
+                        <h4>Clear My Dues</h4>
+                        <p>The selected intern(s) will work on following during the internships:
+                            <br> 1. Contacting clients and DSA's.
+                            <br> 2. Conducting market research and marketing.
+                            <br> 3. Creating brand awareness among bank representatives and customers.
+                            <br>
+                            <br> Who can apply:
+                            <br> Anyone with a commerce background looking to work in a challenging environment with a start-up.The posting consists of field work as well, so the applicant must be suited for this as well.</p>
+                    </div>
+                </div>
+                <div id="small-dialog13" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/acelerar.png" alt="" />
+                        <h4>Acelerar Technologies</h4>
+                        <p>Content Writing Internship/ Management Trainee
+                            <br> Location – Noida, sector 63
+                            <br> Desired Skills–
+                            <br> 1) Good command over written and spoken English and a passion for writing
+                            <br> 2) Good analytical and research skills and creative bent of mind
+                            <br> 3) Opportunity to gain domain experience and responsible for opionated writing and frequently posting new content to the internet
+                            <br>
+                            <br> Candidates Profile – 1) PG in English/ Literature/ Mass Communication or Journalism with excellent command over written English can apply.
+                            <br> 2) Expert knowledge of social networking channels
+                        </p>
+                    </div>
+                </div>
+                <div id="small-dialog14" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/greymeter.png" alt="" />
+                        <h4>Greymeter Services</h4>
+                        <p>Profile 1: Marketing and strategy
+                            <br> Profile 2: Content developer</p>
+                    </div>
+                </div>
+                <div id="small-dialog15" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/wetravelsolo.jpg" alt="" />
+                        <h4>WeTravelSolo</h4>
+                        <p>Job Description
+                            <br>
+                            <br> - Utilize word of mouth marketing, Internet marketing, and Internet marketing techniques to increase traffic, brand awareness.
+                            <br> - Leverage social networks to strengthen relationships with existing clients and increase the number of impressions on potential clients
+                            <br> - Analyze customer and competitor trends, industry data to help business unit optimize marketing programs, go to market strategies, and capitalize on new opportunities
+                            <br> - Planning and execution of on and off site events, meetings, and familiarization trips for, but not limited to, Marketing/Sales, Community Relations, and Government Relations.
+                            <br> - Handling post event evaluations/recaps
+                            <br> If Technical Student
+                            <br> - Design and build advanced applications for the Android platform  Good knowledge of HTML / HTML5 / CSS / CSS3 / JavaScript / JQuery
+                            <br> Knowledge and Skills Required
+                            <br> - Excellent written and oral communication skills
+                            <br> - Understanding of Linkedin, Facebook, Twitter & Youtube
+                            <br> - Fearless attitude towards technology and a willingness to learn
+                            <br> - Loves Travelling, Photography, Event Planning</p>
+                    </div>
+                </div>
+                <div id="small-dialog16" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/buddzter.png" alt="" />
+                        <h4>Buddzter Web Services</h4>
+                        <p>Content Awaited</p>
+                    </div>
+                </div>
+                <div id="small-dialog17" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/floweraura.png" alt="" />
+                        <h4>Flower Aura</h4>
+                        <p>CONTENT WRITER
+                            <br>
+                            <br> JOB DESCRIPTION:
+                            <br>- Writing on page articles
+                            <br>- Coming up with ideas for blogs and other social media content
+                            <br>- Creative writing as per trends
+                            <br>- Handling Social Media content
+                            <br>- Content for Emailers
+                            <br>- Content for PR stories
+                            <br>
+                            <br>JOB REQUIREMENT:
+                            <br>- Excellent Written skills
+                            <br>- Creative Thinking
+                            <br>- Excellent Communication Skills
+                            <br>
+                            <br>VIDEO EDITOR
+                            <br>
+                            <br>JOB DESCRIPTION:
+                            <br>- Editing videos for official purposes
+                            <br>- Helping in shooting videos for the same
+                            <br>- Creative editing
+                            <br>
+                            <br>JOB REQUIREMENT:
+                            <br>- Excellent knowledge of editing softwares
+                            <br>- Complete understanding of camera
+                            <br>- Understanding of Rules of Photography - still and motion
+                        </p>
+                    </div>
+                </div>
+                <div id="small-dialog18" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/gbindia.png" alt="" />
+                        <h4>Global Business Incubator</h4>
+                        <p>Position: Community Development Manager
+                            <br>
+                            <br> Overview of the role: The Community Development Manager is responsible for helping develop the Delhi and north India community. This role combines working with the Directors directly to identify institutions where we can create impact (both bottom up and top down) and also external outreach and interactions with community leaders and key partners.
+                            <br>
+                            <br>
+                            <br>Term: TBD
+                            <br>
+                            <br>Responsibilities include:
+                            <br>
+                            <br>• Expansion: Outreach to identify new partners to expand the academic incubator network of GBI across Delhi.
+                            <br>• Pioneer methods to expand programming into non-traditional startup communities, including all Tier I and Tier II cities
+                            <br>
+                            <br>Community Development:
+                            <br> Alumni Happiness & Well Being
+                            <br>• Collect community feedback to identify successes / gaps in community value proposition
+                            <br>• Maintain database of alumni/students + identify opportunities to broadcast success stories
+                            <br>• Coordinate different community gatherings like meetups, outreach sessions, etc.)
+                            <br>
+                            <br>Marketing & Communications:
+                            <br>- Maintain GBI India social media accounts
+                            <br>- Work with the marketing team to design and implement marketing practices and campaigns with regional needs and preferences
+                            <br>
+                            <br>Reporting / communications:
+                            <br>• Participate in weekly meetings.
+                            <br>• Report directly to the North India Director - GBI
+                            <br>
+                            <br>Perks except compensation:
+                            <br>• Travel across South Asia: Our staff has travelled to 22 countries. You have the opportunity to travel and work across South Asia.
+                            <br>• Work anytime, anywhere: Work your own hours from anywhere, including two of our regional offices in India.
+                        </p>
+                    </div>
+                </div>
+                <div id="small-dialog19" class="mfp-hide">
+                    <div class="image-top">
+                        <img src="images/ic/wooo.png" alt="" />
+                        <h4>Wooo</h4>
+                        <p>
+                            <br>-Android developer
+                            <br>-Machine learning
+                            <br>-Outreach</p>
+                    </div>
+                </div>
+                <script>
+                $(document).ready(function() {
+                    $('.popup-with-zoom-anim').magnificPopup({
+                        type: 'inline',
+                        fixedContentPos: false,
+                        fixedBgPos: true,
+                        overflowY: 'auto',
+                        closeBtnInside: true,
+                        preloader: false,
+                        midClick: true,
+                        removalDelay: 300,
+                        mainClass: 'my-mfp-zoom-in'
+                    });
+                });
+                </script>
+                <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+                <script type="text/javascript">
+                $(function() {
+                    var filterList = {
+                        init: function() {
+                            $('#portfoliolist').mixitup({
+                                targetSelector: '.portfolio',
+                                filterSelector: '.filter',
+                                effects: ['fade'],
+                                easing: 'snap',
+                                onMixEnd: filterList.hoverEffect()
+                            });
+                        },
+                        hoverEffect: function() {
+                            $('#portfoliolist .portfolio').hover(
+                                function() {
+                                    $(this).find('.label').stop().animate({
+                                        bottom: 0
+                                    }, 200, 'easeOutQuad');
+                                    $(this).find('img').stop().animate({
+                                        top: -30
+                                    }, 500, 'easeOutQuad');
+                                },
+                                function() {
+                                    $(this).find('.label').stop().animate({
+                                        bottom: -40
+                                    }, 200, 'easeInQuad');
+                                    $(this).find('img').stop().animate({
+                                        top: 0
+                                    }, 300, 'easeOutQuad');
+                                }
+                            );
+                        }
+                    };
+                    filterList.init();
+                });
+                </script>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <div id="location" class="contact-us">
+        <div class="container">
+            <div class="get-info text-center">
+                <h2 style="color: white">LOCATION</h2>
+            </div>
+            <br>
+            <br>
+            <div class="map" style="width:100%">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.160339557983!2d77.28024315502611!3d28.560131705790567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x6a6dc45ff88d2ec5!2sFaculty+of+Engineering+and+Technology!5e0!3m2!1sen!2sin!4v1428241526838" frameborder="0" style="border:0"></iframe>
+            </div>
+            <div class="contact-grids">
+                <!-- <div class="col-md contact-grid text-center">
 				<div class="point-icon"></div>
 				<p>Faculty of Engineering and Technology</p>
 				<p>Jamia Millia Islamia</p>
 				<p>Maulana Mohammed Ali Jauhar Marg</p>
 				<p>New Delhi-110025</p>
 			</div> -->
-			
-			<br><br>
-			<div class="col-md-4 contact-grid text-center">
-				<h4>Nearest Metro stations</h4>
-				<p>Kalkaji Mandir</p>
-				<p>Govindpuri</p>
-			</div>
-			<div class="col-md-4 contact-grid text-center">
-				<h4>Nearest bus stands</h4>
-				<p>Jamia Nagar</p>
-				<p>Holy Family Hospital</p>
-			</div>
-			<div class="col-md-4 contact-grid text-center">
-				<h4>Buses you can take</h4>
-				<p>402, 403, 507, 534, 894</p>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="twitt-slider">
-	<div class="container">
-			<a href="https://www.facebook.com/events/287560234701214/287845228006048/">
-				<div class="twitt-info">
-					<img src="images/facebook.png" alt="" />
-					<br><br>
-					<h2 style="color:#FFF">Follow us on Facebook</h2>
-					<h3>Join the event and spread the word !</h3>	
-				</div>
-			</a>
-	</div>
-</div>
-<div id="contact" class="our-team">
-	<div class="container">
-		<div class="team-info text-center">
-			<h2><span>CONTACT</span> US</h2>
-		</div>
-		<br><br><br>
-		<div class="team-grids">
-			<div class="col-md-4 team-grid">
-				<div class="team-grid-info">
-					<h3>Ashar Javed</h3>
-					<p>981-160-0063</p>
-					<p>asharjaved7@gmail.com</p>
-				</div>
-			</div>
-			<div class="col-md-4 team-grid">
-				<div class="team-grid-info">
-					<h3>Shivam Rana</h3>
-					<p>901-349-5129</p>
-					<p>theshivamrana@gmail.com</p>
-				</div>
-			</div>
-			<div class="col-md-4 team-grid">
-				<div class="team-grid-info">
-					<h3>Zishan Ahmad</h3>
-					<p>989-941-4803</p>
-					<p>zishanrbp@gmail.com</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="footer">
-	<div class="container">
-		<div style="color:#AAA; text-align:center">
-			<h4>Internship Fair</h4>
-			<h4>Faculty of Engineering and Technology</h4>
-			<h4><a href="http://jmi.ac.in">Jamia Millia Islamia</a></h4>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</div>
-	<script type="text/javascript">
-		$(document).ready(function() {
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+                <br>
+                <br>
+                <div class="col-md-4 contact-grid text-center">
+                    <h4>Nearest Metro stations</h4>
+                    <p>Kalkaji Mandir</p>
+                    <p>Govindpuri</p>
+                </div>
+                <div class="col-md-4 contact-grid text-center">
+                    <h4>Nearest bus stands</h4>
+                    <p>Jamia Nagar</p>
+                    <p>Holy Family Hospital</p>
+                </div>
+                <div class="col-md-4 contact-grid text-center">
+                    <h4>Buses you can take</h4>
+                    <p>402, 403, 507, 534, 894</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="twitt-slider">
+        <div class="container">
+            <a href="https://www.facebook.com/events/287560234701214/287845228006048/">
+                <div class="twitt-info">
+                    <img src="images/facebook.png" alt="" />
+                    <br>
+                    <br>
+                    <h2 style="color:#FFF">Follow us on Facebook</h2>
+                    <h3>Join the event and spread the word !</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="contact" class="our-team">
+        <div class="container">
+            <div class="team-info text-center">
+                <h2><span>CONTACT</span> US</h2>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="team-grids">
+                <div class="col-md-4 team-grid">
+                    <div class="team-grid-info">
+                        <h3>Ashar Javed</h3>
+                        <p>981-160-0063</p>
+                        <p>asharjaved7@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 team-grid">
+                    <div class="team-grid-info">
+                        <h3>Shivam Rana</h3>
+                        <p>901-349-5129</p>
+                        <p>theshivamrana@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 team-grid">
+                    <div class="team-grid-info">
+                        <h3>Zishan Ahmad</h3>
+                        <p>989-941-4803</p>
+                        <p>zishanrbp@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div style="color:#AAA; text-align:center">
+                <h4>Internship Fair</h4>
+                <h4>Faculty of Engineering and Technology</h4>
+                <h4><a href="http://jmi.ac.in">Jamia Millia Islamia</a></h4>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $().UItoTop({
+            easingType: 'easeOutQuart'
+        });
+    });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </body>
+
 </html>

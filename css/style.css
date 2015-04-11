@@ -593,8 +593,11 @@ ul.social li span.text{
 .four{
 	min-height:355px;
 }
+.ten{
+	min-height:10px;
+}
 .five{
-	min-height:239px;
+	min-height:229px;
 }
 .six{
 	min-height:260px;
@@ -1819,6 +1822,9 @@ ul.social-slide li i.mac{
 	.simple-in.four {
 		min-height: 283px;
 		}
+	.simple-in.ten {
+			min-height: 10px;
+			}
 	.simple-in.five {
 		min-height: 191px;
 		}
@@ -2138,6 +2144,9 @@ ul.social-slide li i.mac{
 	.simple-in.four {
 		min-height: 224px;
 		}
+	.simple-in.ten {
+			min-height: 10px;
+			}
 	.simple-in.seven {
 		min-height: 169px;
 		}
@@ -2490,6 +2499,9 @@ ul.social-slide li i.mac{
 	.simple-in.four {
 		min-height: 183px;
 		}
+	.simple-in.ten {
+			min-height: 10px;
+			}
 	.simple-in.seven {
 		min-height: 139px;
 		}
@@ -2808,6 +2820,10 @@ ul.social-slide li i.mac{
 	.simple-in.four {
 		min-height: 139px;
 		}
+	.simple-in.ten {
+		min-height: 10px;
+		}
+
 	.simple-in.seven {
 		min-height: 105px;
 		}
@@ -3112,6 +3128,9 @@ ul.social-slide li i.mac{
 		}
 	.simple-in.four {
 		min-height: 274px;
+		}
+	.simple-in.ten {
+		min-height: 10px;
 		}
 	.simple-in.five {
 		min-height: 184px;
