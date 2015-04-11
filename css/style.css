@@ -1,4 +1,14 @@
-﻿body{
+﻿/* mine */
+.grey {
+	background-color: grey;
+}
+
+.black {
+	background-color: black;
+}
+
+
+body{
 	font-family: 'Lato', sans-serif;
 	margin:0;
 	}
