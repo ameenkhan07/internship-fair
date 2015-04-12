@@ -576,7 +576,7 @@ ul.social li span.text{
 	display: none;
 	position: absolute;
 	top: 0;
-	background: rgba(153, 204, 51, 0.5);
+	background: rgba(153, 204, 51, 0.35);
 	width: 100%;
 	border: 11px solid rgba(153, 204, 51, 0.67);
 	min-height: 259px;
