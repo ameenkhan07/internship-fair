@@ -2219,7 +2219,8 @@ ul.social-slide li i.mac{
 		}
 	.team-grid {
 		float: left;
-		width: 33.3%;
+		margin-top: 5%;
+		width: 50%;
 		}
 	.team-grid:nth-child(4) {
 		display: none;
@@ -2853,14 +2854,15 @@ ul.social-slide li i.mac{
 		display: none;
 		}
 	.pricing-grid {
-		width: 45%;
+		width: 100%;
+		margin:5em 0 0 0;
 		}
 	.col-md-3.team-grid:nth-child(3) {
 		display: none;
 		}
 	.team-grid {
 		float: left;
-		width: 50%;
+		width: 100%;
 		}
 	.team-grid-image ul {
 		top: 46.7%;
