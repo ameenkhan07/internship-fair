@@ -1,5 +1,5 @@
 /* Styles for dialog window */
-#small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5 ,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9,#small-dialog10,#small-dialog11,#small-dialog12,#small-dialog13,#small-dialog14,#small-dialog15,#small-dialog16,#small-dialog17,#small-dialog18,#small-dialog19,#small-dialog20,#small-dialog21,#small-dialog22,#small-dialog23,#small-dialog24,#small-dialog25,#small-dialog26,#small-dialog27,#small-dialog28{
+#small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5 ,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9,#small-dialog10,#small-dialog11,#small-dialog12,#small-dialog13,#small-dialog14,#small-dialog15,#small-dialog16,#small-dialog17,#small-dialog18,#small-dialog19{
   background: #99cc33;
   padding: 36px 12px 12px 12px;
   max-width: 500px;
@@ -217,7 +217,7 @@ button::-moz-focus-inner {
   right: -6px;
   text-align: right;
   padding-right: 6px;
-  width: 100%;
+  width: 100%; 
 }
 .image-top img{
   width:100%;
@@ -239,12 +239,12 @@ button::-moz-focus-inner {
   color:#000;
   }
 @media screen and (max-width:800px){
-  #small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5 ,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9,#small-dialog10,#small-dialog11,#small-dialog12,#small-dialog13,#small-dialog14,#small-dialog15,#small-dialog16,#small-dialog17,#small-dialog18,#small-dialog19,#small-dialog20,#small-dialog21,#small-dialog22,#small-dialog23,#small-dialog24,#small-dialog25,#small-dialog26,#small-dialog27,#small-dialog28{
+  #small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5 ,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9,#small-dialog10,#small-dialog11,#small-dialog12,#small-dialog13,#small-dialog14,#small-dialog15,#small-dialog16,#small-dialog17,#small-dialog18,#small-dialog19{
     max-width: 450px;
   }
   }
 @media screen and (max-width:768px){
-  #small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5 ,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9,#small-dialog10,#small-dialog11,#small-dialog12,#small-dialog13,#small-dialog14,#small-dialog15,#small-dialog16,#small-dialog17,#small-dialog18,#small-dialog19,#small-dialog20,#small-dialog21,#small-dialog22,#small-dialog23,#small-dialog24,#small-dialog25,#small-dialog26,#small-dialog27,#small-dialog28{
+  #small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5 ,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9,#small-dialog10,#small-dialog11,#small-dialog12,#small-dialog13,#small-dialog14,#small-dialog15,#small-dialog16,#small-dialog17,#small-dialog18,#small-dialog19{
     max-width: 400px;
   }
 
@@ -254,7 +254,7 @@ button::-moz-focus-inner {
     }
   }
 @media screen and (max-width:640px){
-  #small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5 ,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9,#small-dialog10,#small-dialog11,#small-dialog12,#small-dialog13,#small-dialog14,#small-dialog15,#small-dialog16,#small-dialog17,#small-dialog18,#small-dialog19,#small-dialog20,#small-dialog21,#small-dialog22,#small-dialog23,#small-dialog24,#small-dialog25,#small-dialog26,#small-dialog27,#small-dialog28{
+  #small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5 ,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9,#small-dialog10,#small-dialog11,#small-dialog12,#small-dialog13,#small-dialog14,#small-dialog15,#small-dialog16,#small-dialog17,#small-dialog18,#small-dialog19{
     max-width: 350px;
   }
 
@@ -268,7 +268,7 @@ button::-moz-focus-inner {
     }
   }
 @media screen and (max-width:320px){
-  #small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5 ,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9,#small-dialog10,#small-dialog11,#small-dialog12,#small-dialog13,#small-dialog14,#small-dialog15,#small-dialog16,#small-dialog17,#small-dialog18,#small-dialog19,#small-dialog20,#small-dialog21,#small-dialog22,#small-dialog23,#small-dialog24,#small-dialog25,#small-dialog26,#small-dialog27,#small-dialog28{
+  #small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5 ,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9,#small-dialog10,#small-dialog11,#small-dialog12,#small-dialog13,#small-dialog14,#small-dialog15,#small-dialog16,#small-dialog17,#small-dialog18,#small-dialog19{
     max-width: 260px;
   }
   .mfp-close {
