@@ -608,6 +608,9 @@ ul.social li span.text{
 .eight{
 	min-height:354px;
 }
+.nine{
+	min-height:390px;
+}
 .play-icon:hover .simple-in{
 	display:block;
 }
