@@ -512,8 +512,12 @@ ul#filters {
 }	
 .portfolio-wrapper {
 	overflow:hidden;
-	padding:20px;
 	position: relative !important;
+}
+.img-responsive
+{
+	padding:20px;
+	
 }
 .portfolio img {
 	max-width:100%;
